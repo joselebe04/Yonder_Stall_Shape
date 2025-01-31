@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        iframe {
+            width: 80%;
+            height: 80vh;
+            border: none;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #225588;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #1a4466;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Viewer</h1>
+    <iframe id="pdf-viewer" src="Who_Is_He_Shaped.pdf" allowfullscreen></iframe>
+    <br>
+    <a id="download-link" class="download-btn" href="Who_Is_He_Shaped.pdf" download>Download PDF</a>
+</body>
+</html>
